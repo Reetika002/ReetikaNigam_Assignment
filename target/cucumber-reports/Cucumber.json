@@ -1,0 +1,131 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4322800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify JP Morgan logo",
+        "description": "",
+        "id": "verify-jp-morgan-logo;verify-jp-morgan-logo;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 629944900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2501214200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open browser and go to google.com",
+            "match": {
+              "location": "SearchTest.openBrowserAndGoToGoogleCom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 153987700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter \"J.P. Morgan\" on search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "J.P. Morgan",
+                  "offset": 7
+                }
+              ],
+              "location": "SearchTest.enterOnSearchBox(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2347481600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on search button",
+            "match": {
+              "location": "SearchTest.clickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90360900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should be able to see the results",
+            "match": {
+              "location": "SearchTest.userShouldBeAbleToSeeTheResults()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13154581600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on the first result",
+            "match": {
+              "location": "SearchTest.clickOnTheFirstResult()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1338384300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify that J.P. Morgan logo is shown",
+            "match": {
+              "location": "SearchTest.verifyThatJPMorganLogoIsShown()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Verify JP Morgan logo",
+    "description": "",
+    "id": "verify-jp-morgan-logo",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/TC1_search_jpmorgan.feature"
+  }
+]
